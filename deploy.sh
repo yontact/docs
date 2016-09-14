@@ -8,3 +8,6 @@ git add -A
 git commit -m 'deploy...'
 git push -f -u origin master
 cd ..
+
+export PATH=/Applications/calibre.app/Contents/MacOS:$PATH
+gitbook pdf
