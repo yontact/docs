@@ -1,0 +1,26 @@
+{
+  "name": "yontact-wiki",
+  "version": "1.0.0",
+  "description": "## 产品概述",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yontact/docs.git"
+  },
+  "author": "chenwei <acee06.weichen@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yontact/docs/issues"
+  },
+  "homepage": "https://github.com/yontact/docs#readme",
+  "dependencies": {
+    "concat-files": "^0.1.0",
+    "marked": "^0.3.6",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
+    "node-pandoc": "^0.2.0"
+  }
+}

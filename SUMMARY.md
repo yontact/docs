@@ -1,4 +1,4 @@
-# Summary
+# 目录
 
 * [云镜简介](README.md)
 * [基础管理](basic/README.md)
@@ -23,6 +23,5 @@
     * [资源库](extend/libproduct.md)
     * [供应商](extend/provider.md)
     * [近日统计](extend/analytics.md)
-#* [分店管理](subbranch/README.md)
 * [资料下载](download/README.md)
 
