@@ -2,6 +2,7 @@
 
 gitbook build
 cd _book
+rm deploy.sh gendocx.*
 git init
 git remote add origin git@git.coding.net:chenweiyj/yontact-gitbook.git
 git add -A
