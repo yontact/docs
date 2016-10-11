@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# export PATH=/Applications/calibre.app/Contents/MacOS:$PATH
-# gitbook pdf
+export PATH=/Applications/calibre.app/Contents/MacOS:$PATH
+gitbook pdf
 
 gitbook build
 cd _book
@@ -11,6 +11,7 @@ cd ..
 mkdir -p _publish
 mv _book/* _publish/
 
+cd _publish
 git remote -v
 status=$?
 if [[ status -ne 0 ]]; then
