@@ -1,15 +1,15 @@
 #!/bin/bash
 #
-export PATH=/Applications/calibre.app/Contents/MacOS:$PATH
-gitbook pdf
+# export PATH=/Applications/calibre.app/Contents/MacOS:$PATH
+# gitbook pdf
 
-gitbook build
+# gitbook build
 cd _book
 rm deploy.sh gendocx.* .gitignore
 cp ../book.pdf download/mate/云镜说明书-完整版.pdf
 cd ..
 mkdir -p _publish
-mv _book/* _publish/
+rsync -avz _book/ _publish/
 
 cd _publish
 git remote -v
