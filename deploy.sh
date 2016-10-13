@@ -25,6 +25,7 @@ git commit -m 'deploy...'
 git push -u origin master
 
 # 将 markdown 源文件提交
+cd ..
 git pull
 git add -A
 git commit -m "update document $1"
