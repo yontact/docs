@@ -1,7 +1,7 @@
 {
   "name": "yontact-wiki",
-  "version": "1.0.0",
-  "description": "## 产品概述",
+  "version": "1.0.1",
+  "description": "云镜帮助文档",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

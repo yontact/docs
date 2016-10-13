@@ -1,4 +1,14 @@
 {
   "title": "云镜帮助文档",
-  "language": "zh-cn"
+  "language": "zh-cn",
+  "plugins": ["edit-link", "prism", "ga"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/yontact/docs/tree/master",
+      "label": "开始纠错"
+    },
+    "ga": {
+      "token": "UA-74833462-1"
+    }
+  }
 }
