@@ -12,15 +12,14 @@ mkdir -p _publish
 rsync -avz _book/ _publish/
 
 cd _publish
-git remote -v #FIXME: 会获取到上级的git，所以总是返回成功
-status=$?
-if [[ status -ne 0 ]]; then
+remote=$(git remote -v)
+if [[ $remote != *"yontact-gitbook"* ]]; then
   git init
   git remote add origin git@git.coding.net:chenweiyj/yontact-gitbook.git
 fi
 
 git branch --set-upstream-to=origin/master master
-git pull
+git pull -u origin master
 git add -A
 git commit -m 'deploy...'
 git push -u origin master
