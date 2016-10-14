@@ -18,7 +18,7 @@ if [[ $remote != *"yontact-gitbook"* ]]; then
 fi
 
 git branch --set-upstream-to=origin/master master
-git pull -u origin master
+git pull origin master
 git add -A
 git commit -m 'deploy...'
 git push -u origin master
