@@ -14,7 +14,8 @@ _publish
 # eBook build output
 *.epub
 *.mobi
-*.pdf
+##*.pdf
+book.pdf
 
 # docx build output
 _docx
