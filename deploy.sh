@@ -5,11 +5,10 @@ gitbook pdf
 
 gitbook build
 cd _book
-rm deploy.sh gendocx.* .gitignore
 cp ../book.pdf download/mate/云镜说明书-完整版.pdf
 cd ..
 mkdir -p _publish
-rsync -avz _book/ _publish/
+rsync -avz _book/ _publish/wiki
 
 cd _publish
 remote=$(git remote -v)

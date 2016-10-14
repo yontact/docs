@@ -22,7 +22,11 @@ var imagesd = path.join(destdir, 'images');
 mkdirp.sync(destdir);
 mkdirp.sync(imagesd);
 
-fs.readFile('SUMMARY.md', 'utf8', function (err, f) {
+var getPath = function (filename) {
+  return './wiki/' + filename;
+};
+
+fs.readFile(getPath('SUMMARY.md'), 'utf8', function (err, f) {
   var summary = f.split('\n').map(function (s) {
     return s.trim();
   }).filter(function (i) {
@@ -30,10 +34,10 @@ fs.readFile('SUMMARY.md', 'utf8', function (err, f) {
       return i;
     }
   }).map(function (i) {
-    return i.match(/^\* \[(.*)\]\((.*)\)$/)[2];
+    return getPath(i.match(/^\* \[(.*)\]\((.*)\)$/)[2]);
   });
 
-  concat(['SUMMARY.md'].concat(summary), path.join(destdir, 'book.md'), function() {
+  concat([getPath('SUMMARY.md')].concat(summary), path.join(destdir, 'book.md'), function() {
     console.log('done');
   });
 

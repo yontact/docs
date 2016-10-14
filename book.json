@@ -1,7 +1,20 @@
 {
+  "gitbook": "3.x.x",
   "title": "云镜帮助文档",
+  "description": "云镜是一款完全符合药监规定并得到药监推荐的在线隐形眼镜管理软件。云镜能让客户随时随地在电脑、手机、平板上进行管理。我们的使命是在经济不景气的情况下，帮助眼镜门店提高产品管理水平，对市场做出更及时的反应，以及帮助门店与客户建立紧密联系来维持与招揽新顾客",
+
   "language": "zh-cn",
-  "plugins": ["edit-link", "prism", "ga"],
+
+  "links": {
+    "sidebar": {
+      "云镜": "https://58ee.top"
+    }
+  },
+  "root": "wiki",
+  "structure": {
+    "summary": "SUMMARY.md"
+  },
+  "plugins": ["edit-link", "prism", "ga", "multipart"],
   "pluginsConfig": {
     "edit-link": {
       "base": "https://github.com/yontact/docs/tree/master",
