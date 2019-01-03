@@ -19,3 +19,4 @@ book.pdf
 
 # docx build output
 _docx
+.DS_Store
